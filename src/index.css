@@ -6,15 +6,21 @@
   color: #74b0bc;
 }
 
-.carrito-icono {
+.carrito {
   position: relative;
 }
-
+.carrito:hover{
+  transform: scale(1.2);
+}
+.carrito-icono{
+  font-size: 2rem;
+  color: #333333;
+}
 .carrito-numero {
   position: absolute;
   font-size: .7rem;
   color: white;
-  top: -19%;
+  top: -10%;
   left: 71%;
   background-color: red;
   width: 15px;
