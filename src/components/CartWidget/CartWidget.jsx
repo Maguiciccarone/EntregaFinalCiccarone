@@ -1,4 +1,6 @@
 import { Icon } from '@iconify/react';
+import './CartWidget.css';
+
 
 const CartWidget = () => {
     const NotificacionCarrito = 3;

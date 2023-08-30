@@ -1,25 +1,29 @@
+import { Link, NavLink} from "react-router-dom";
+
 const ItemsNavBar = () => {
     return (
+        <>
+        <Link to="/" className="navbar-brand"> <img src="../public/img/logo.png" alt="" width="70%" /></Link>
+
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">INICIO</a>
+                <NavLink to= "/" 
+                   className={({ isActive }) => (isActive ? "nav-link active"  : "nav-link")} aria-current="page">INICIO</NavLink>  
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">DESTACADOS</a>
+            <NavLink to= "/category/navegacion" className={({ isActive }) => (isActive ? "nav-link active"  : "nav-link")}>NAVEGACIÓN</NavLink>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">NAVEGACIÓN</a>
+            <NavLink to= "/category/trekking" className={({ isActive }) => (isActive ? "nav-link active"  : "nav-link")}>TREKKING</NavLink>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">TREKKING</a>
+            <NavLink to= "/category/tours" className={({ isActive }) => (isActive ? "nav-link active"  : "nav-link")}>NUESTROS TOURS</NavLink>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">NUESTROS TOURS</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">CONTACTO</a>
+            <NavLink to= "/contacto" className={({ isActive }) => (isActive ? "nav-link active"  : "nav-link")}>CONTACTO</NavLink>
             </li>
         </ul>
+        </>
     )
 }
 
