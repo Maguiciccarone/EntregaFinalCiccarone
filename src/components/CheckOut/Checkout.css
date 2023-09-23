@@ -10,3 +10,17 @@
     list-style-type: none;
     color: grey;
 }
+
+.form-contact {
+    margin-bottom: 20px;
+}
+
+.label-form {
+    color: #74b0bc;
+}
+
+.input-form {
+    margin-left: 10px;
+    box-shadow: 2px 2px #74b0bc;
+    width: 500px;
+}
