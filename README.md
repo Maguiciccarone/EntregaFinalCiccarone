@@ -29,5 +29,10 @@ npm start
 ```
 
 ## DEMO
-
 A continuación podrás ver un breve resumen de como funciona este proyecto.
+
+https://github.com/Maguiciccarone/EntregaFinalCiccarone/assets/130803208/7b932429-ab15-40ad-9bc5-791da2294dca
+
+
+
+
