@@ -12,11 +12,11 @@ const CartWidget = () => {
 
     return (
 
-        <Link to={'/cart'}>
-            <a className="carrito" href="">
-                <Icon className="carrito-icono" icon="ion:cart" />
-                <span className="carrito-numero">{quantity > 0 ? quantity : ""}</span>
-            </a>
+        <Link className="carrito" to={'/cart'}>
+
+            <Icon className="carrito-icono" icon="ion:cart" />
+            <span className="carrito-numero">{quantity > 0 ? quantity : ""}</span>
+
         </Link>
     )
 };

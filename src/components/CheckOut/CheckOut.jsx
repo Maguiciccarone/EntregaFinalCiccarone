@@ -62,7 +62,7 @@ const Checkout = () => {
 
             <h4 style={{ color: "grey" }}>Resumen de la compra</h4>
 
-            {orderId && <p class="alert alert-success" role="alert"> {formData.name},  el id de la orden es: {orderId}</p>}
+            {orderId && <p className="alert alert-success" role="alert"> {formData.name},  el id de la orden es: {orderId}</p>}
 
             {!orderId && (
                 <>

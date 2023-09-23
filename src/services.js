@@ -44,7 +44,6 @@ export const getProducts = (categoryId) => {
         const db = getFirestore();
 
         const itemCollection = collection(db, "productos");
-        console.log(itemCollection)
 
         let q
         if (categoryId) {

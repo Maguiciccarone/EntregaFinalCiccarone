@@ -16,7 +16,7 @@ const Cart = () => {
                 {cart.length >= 1 ? (
                     cart.map((item) => (
 
-                        <div key={item.id.id} className="mt-4">
+                        <div key={item.id} className="mt-4">
                             <div className="d-flex align-items-center justify-content-center">
                                 <img src={`../public/img/portadas/${item.imageId}`} style={{ width: 400, height: 300 }} alt="" />
                                 <div className="mx-5">
