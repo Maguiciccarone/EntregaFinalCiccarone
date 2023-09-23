@@ -62,7 +62,7 @@ const Checkout = () => {
 
             <h4 style={{ color: "grey" }}>Resumen de la compra</h4>
 
-            {orderId && <p class="alert alert-success" role="alert">El id de la orden es: {orderId}</p>}
+            {orderId && <p class="alert alert-success" role="alert"> {formData.name},  el id de la orden es: {orderId}</p>}
 
             {!orderId && (
                 <>
@@ -100,8 +100,6 @@ const Checkout = () => {
                                     onChange={handleChange}
                                 />
                             </div>
-
-                            <button className="btn btn-light mb-4" style={{ color: "#74b0bc", borderColor: "lightgrey" }} type="submit">Enviar</button>
                         </form>
 
                     </div>
