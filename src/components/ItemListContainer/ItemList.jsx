@@ -26,7 +26,7 @@ const ItemList = ({ items, isLoading }) => {
                                     <h3 style={{ height: "60px" }}>{item.name}</h3>
                                     <p>${item.price}</p>
                                     <Link to={`/item/${item.id}`}>
-                                        <button className="btn btn-light" style={{ color: "#74b0bc" }}>VER EXCURSIÓN</button>
+                                        <button className="btn btn-light" style={{ color: "#74b0bc", borderColor: "lightgrey" }}>VER EXCURSIÓN</button>
                                     </Link>
                                 </div>
                             </div>

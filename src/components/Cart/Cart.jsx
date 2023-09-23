@@ -33,7 +33,7 @@ const Cart = () => {
                 <div className="my-5 d-flex justify-content-center">
                     {cart.length == 0 ?
                         <div>
-                            <button onClick={clear} className="btn btn-danger" disabled> Eliminar Carrito </button>
+                            <Link to='/' className="btn btn-light" style={{ color: "#74b0bc", borderColor: "grey" }}>VER EXCURSIONES </Link>
                         </div> :
                         <div>
                             <button onClick={clear} className="btn btn-light m-5" style={{ color: "#74b0bc", borderColor: "grey" }}> Eliminar Carrito </button>

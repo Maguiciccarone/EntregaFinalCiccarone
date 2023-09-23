@@ -23,7 +23,7 @@ const ItemDetail = ({ item, isLoading, addItem }) => {
                 <p className="text_justify">{item.description}</p>
                 <br />
                 <p className="alert alert-success" role="alert" style={{ backgroundColor: "#74b0bc", color: "white" }}>PRECIO: ${item.price}</p>
-                <button className="mb-5 btn btn-light" style={{ color: "#74b0bc" }} onClick={() => addItem(item, 1)}>Agregar al carrito</button>
+                <button className="mb-5 btn btn-light" style={{ color: "#74b0bc", borderColor: "lightgray" }} onClick={() => addItem(item, 1)}>Agregar al carrito</button>
             </div>
         </div>
     );
