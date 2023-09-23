@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 import './CartWidget.css';
 import { useContext } from 'react';
 import CartContext from '../../context/CartContext';
@@ -9,10 +10,15 @@ const CartWidget = () => {
 
     const quantity = getCartQuantity(cart);
 
-    return <div> <a className="carrito" href="">
-        <Icon className="carrito-icono" icon="ion:cart" />
-        <span className="carrito-numero">{quantity > 0 ? quantity : ""}</span>
-    </a></div>;
+    return (
+
+        <Link to={'/cart'}>
+            <a className="carrito" href="">
+                <Icon className="carrito-icono" icon="ion:cart" />
+                <span className="carrito-numero">{quantity > 0 ? quantity : ""}</span>
+            </a>
+        </Link>
+    )
 };
 
 export default CartWidget;
