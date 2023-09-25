@@ -11,22 +11,19 @@ const Cart = () => {
     return (
         <div>
             <h1 className="text-center mb-4 mt-4" style={{ color: "#74b0bc" }}>MI COMPRA</h1>
-            <div className="container-fluid">
+            <div className="container d-flex flex-column align-items-center" >
 
                 {cart.length >= 1 ? (
                     cart.map((item) => (
 
-                        <div key={item.id} className="mt-4">
-                            <div className="d-flex align-items-center justify-content-center">
-                                <img src={`../public/img/portadas/${item.imageId}`} style={{ width: 400, height: 300 }} alt="" />
-                                <div className="mx-5">
-                                    <h3 className="mb-4">{item.name}</h3>
-                                    <p className="text-color">{item.description}</p>
-                                    <p className="text-color">CANTIDAD: {item.quantity}</p>
-                                    <p className="text-color">PRECIO DE LA EXCURSIÓN: ${item.price}</p>
-                                </div>
-                                <button onClick={() => removeItem(item.id)} className="ms-1 badge text-bg" style={{ color: "#74b0bc" }}>Eliminar</button>
+                        <div key={item.id} className="mt-4 cart-container">
+                            <img src={`../public/img/portadas/${item.imageId}`} style={{ width: 300, height: 200 }} alt="" />
+                            <div className="mx-5">
+                                <h3 className="mb-4">{item.name}</h3>
+                                <p className="text-color">CANTIDAD: {item.quantity}</p>
+                                <p className="text-color">PRECIO DE LA EXCURSIÓN: ${item.price}</p>
                             </div>
+                            <button onClick={() => removeItem(item.id)} className="ms-1 badge text-bg" style={{ color: "#74b0bc" }}>Eliminar</button>
                         </div>
                     ))) : <h3 className="text-center" style={{ color: "#74b0bc" }}> El carrito esta vacio </h3>
                 }
