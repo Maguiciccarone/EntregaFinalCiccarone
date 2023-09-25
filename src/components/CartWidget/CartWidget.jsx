@@ -15,7 +15,8 @@ const CartWidget = () => {
         <Link className="carrito" to={'/cart'}>
 
             <Icon className="carrito-icono" icon="ion:cart" />
-            <span className="carrito-numero">{quantity > 0 ? quantity : ""}</span>
+
+            {quantity > 0 ? <span className="carrito-numero">{quantity}</span> : ""}
 
         </Link>
     )
